@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án</title>
+
+    <style>
+        /* 1. Cấu hình chung */
+        body {
+            font-family: times, sans-serif;
+            /*font chữ*/
+            background-color: #fae1e0;
+            color: #0b0b0b;
+            /*màu chữ*/
+            margin: 20px;
+            /*căn lề*/
+            line-height: 1.6;
+        }
+
+        /* 2. Menu điều hướng (Bắt buộc phải có) */
+        .menu-top {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 10px;
+            background: #fff;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .menu-top a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        .menu-top a:hover {
+            color: #0056b3;
+        }
+
+        /* 3. Tiêu đề trang */
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            text-transform: uppercase;
+        }
+
+        /* 4. TẠO DÒNG THỜI GIAN (TIMELINE) - PHẦN QUAN TRỌNG */
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            /* Căn giữa trang */
+            position: relative;
+            padding-left: 30px;
+            /* Chừa chỗ cho đường kẻ dọc */
+            border-left: 4px solid #0056b3;
+            /* Đây là đường kẻ dọc màu xanh */
+        }
+
+        /* Các khối nội dung (Cấp 1, 2, 3) */
+        .timeline-item {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            /* Bo góc cho mềm mại */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Đổ bóng nhẹ */
+            position: relative;
+        }
+
+        /* Dấu chấm tròn trang trí trên đường kẻ */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            /* Đẩy dấu chấm ra nằm đè lên đường kẻ dọc */
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            /* Màu đỏ nổi bật */
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #d35400;
+            font-size: 18px;
+        }
+
+        .school-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .role {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu-top">
+        <a href="InfoCaNhan.html">Trang chủ</a>
+        <a href="DuAn.html" style="color: #0056b3;">Dự án</a>
+        <a href="KinhNghiem.html"> Kinh nghiệm</a>
+        <a href="SoThich.html">Sở thích</a>
+        <a href="SachYeuThich.html">Sách yêu thích</a>
+    </nav>
+
+    <header>
+        <h1> Dự án đã tham gia</h1>
+    </header>
+    <main>
+        <div class="timeline">
+            <div class=" timeline-item">
+                <h2>1. Dự án 1:</h2>
+                <p><strong> Tên dự án: </strong>Xuân tình nguyện NBK</p>
+                <p><strong> Mô tả:</strong> Là một hoạt động tình nguyện được tổ chức hàng năm tại trường THPT chuyên
+                    Nguyễn Bỉnh Khiêm nhằm mục đích đem lại một mùa Tết đẩy yêu thương cho những người yếu thế tại khu
+                    vực thành
+                    phố Tam Kỳ</p>
+                <p><strong> Vai trò: </strong>Chỉ huy phó</p>
+                <p><strong> Link dự án:</strong>
+                    <a href="https://www.facebook.com/clbtuthiennbk"class="contact-link" target="_blank">CLB Từ Thiện NBK</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class=" timeline-item">
+                <h2>2. Dự án 2:</h2>
+                <p><strong> Tên dự án:</strong> Khói ấm</p>
+                <p><strong> Mô tả:</strong> Là dự án trực thuộc khoa Thư viện - Thông tin học, trường Đại học Khoa học
+                    Xã hội và Nhân Văn, ĐHQG
+                    HCM phối hợp với chùa Báo Ân nấu những suất cơm tặng cho bệnh nhân và người thân bệnh nhân tại bệnh
+                    viện Nhi đồng 2</p>
+                <p><strong> Vai trò:</strong> Tình nguyện viên</p>
+                <p><strong> Link dự án: </strong>
+                    <a href="https://www.facebook.com/clbvolis" class="contact-link" target="_blank">CLB Tình Nguyện Volis</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class=" timeline-item">
+                <h2> 3. Dự án 3:</h2>
+                <p><strong> Tên dự án:</strong> Xuân yêu thương</p>
+                <p><strong> Mô tả:</strong> Là dự án trực thuộc đoàn trường Đại học Luật với mục đích mang mùa xuân đến
+                    với người dân
+                    tộc thiểu số ở vùng núi Nam Trà My, tỉnh Quảng Nam (cũ) nay thuộc thành phố Đà Nẵng</p>
+                <p><strong> Vai trò:</strong> Tình nguyện viên</p>
+                <p><strong> Link dự án: </strong>
+                    <a href="https://www.facebook.com/clbvolis"class="contact-link" target="_blank">Hội đồng hương Quảng Nam</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p style="text-align: center;">© 2026 Thùy Portfolio</p>
+    </footer>
+</body>
+
+</html>

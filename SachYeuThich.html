@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách yêu thích</title>
+    <style>
+        /* 1. Cấu hình chung */
+        body {
+            font-family: times, sans-serif;
+            /*font chữ*/
+            background-color: #fae1e0;
+            color: #0b0b0b;
+            /*màu chữ*/
+            margin: 20px;
+            /*căn lề*/
+            line-height: 1.6;
+        }
+
+        /* 2. Menu điều hướng (Bắt buộc phải có) */
+        .menu-top {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 10px;
+            background: #fff;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .menu-top a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        .menu-top a:hover {
+            color: #0056b3;
+        }
+
+        /* 3. Tiêu đề trang */
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            text-transform: uppercase;
+        }
+
+        /* 4. TẠO DÒNG THỜI GIAN (TIMELINE) - PHẦN QUAN TRỌNG */
+        .book {
+            max-width: 800px;
+            margin: 0 auto;
+            /* Căn giữa trang */
+            position: relative;
+            padding-left: 30px;
+            /* Chừa chỗ cho đường kẻ dọc */
+            border-left: 4px solid #0056b3;
+            /* Đây là đường kẻ dọc màu xanh */
+        }
+
+        /* Các khối nội dung (Cấp 1, 2, 3) */
+        .book {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            /* Bo góc cho mềm mại */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Đổ bóng nhẹ */
+            position: relative;
+        }
+
+        /* Dấu chấm tròn trang trí trên đường kẻ */
+        .book::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            /* Đẩy dấu chấm ra nằm đè lên đường kẻ dọc */
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            /* Màu đỏ nổi bật */
+            border-radius: 50%;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #d35400;
+            font-size: 18px;
+        }
+
+        .school-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .role {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu-top">
+        <a href="InfoCaNhan.html">Tranh chủ</a>
+        <a href="DuAn.html">Dự án</a>
+        <a href="KinhNghiem.html" >Kinh nghiệm</a>
+        <a href="SoThich.html">Sở thích</a>
+        <a href="SachYeuThich.html" style="color:#0056b3;">Sách yêu thích</a>
+    </nav>
+
+    <header>
+        <h1> Sách yêu thích</h1>
+    </header>
+ 
+    <main>
+        <div class="book">
+            <h2> Đắc Nhân Tâm</h2>
+            <p><strong>Tác giả:</strong> Dale Carnegie</p>
+            <p><strong>Cảm nhận:</strong> Cuốn sách là kim chỉ nam giúp tôi học nghệ thuật lắng nghe 
+            và thấu hiểu, từ đó xây dựng những mối quan hệ chân thành và bền vững.</p>
+        </div>
+
+        <div class="book">
+            <h2>Nhà giả kim</h2>
+            <p><strong>Tác giả:</strong> The Alchemist</p>
+            <p><strong>Cảm nhận:</strong> Cuốn sách gối đầu giường nhắc nhở tôi rằng: Khi bạn khao khát một điều gì đó,
+            cả vũ trụ sẽ hợp lực giúp bạn đạt được nó.</p>
+        </div>
+
+        <div class="book">
+            <h2>Tuổi trẻ đáng giá bao nhiêu</h2>
+            <p><strong> Tác giả:</strong> Nguyễn Hoàng Nguyên</p>
+            <p><strong> Cảm nhận:</strong> Cuốn sách truyền cảm hứng mạnh mẽ để tôi sống trọn vẹn 
+            từng khoảnh khắc thanh xuân, không ngừng học hỏi và trải nghiệm.</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
